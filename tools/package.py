@@ -10,7 +10,7 @@ dist = root / 'dist'
 dist.mkdir(exist_ok=True)
 files = {f'AlbinoUI/{path.name}': path for path in (root / 'AlbinoUI').iterdir() if path.is_file()}
 files['AlbinoUI/README.md'] = root / 'README.md'
-for name in ('COMPATIBILITY.md', 'ACCEPTANCE.md', 'LIMITATIONS.md', 'TEST_REPORT.md'):
+for name in ('COMPATIBILITY.md', 'ACCEPTANCE.md', 'LIMITATIONS.md', 'TEST_REPORT.md', 'REVIEW.md'):
     files['AlbinoUI/docs/' + name] = root / 'docs' / name
 archive = dist / 'AlbinoUI.zip'
 with ZipFile(archive, 'w', compression=ZIP_DEFLATED) as zip_file:
@@ -30,6 +30,8 @@ with ZipFile(archive) as zip_file:
         if line.strip() and not line.startswith('#'):
             assert 'AlbinoUI/' + line.strip().replace('\\', '/') in names
     assert 'AlbinoUI/Bindings.xml' in names
+    for link in re.findall(r'\]\((docs/[^)#]+)\)', zip_file.read('AlbinoUI/README.md').decode()):
+        assert 'AlbinoUI/' + link in names, f'Missing packaged documentation: {link}'
 checksum = sha256(archive.read_bytes()).hexdigest()
 (dist / 'SHA256SUMS').write_text(f'{checksum}  AlbinoUI.zip\n')
 print(f'PASS package: {len(files)} files; CRC, manifest, bindings, and root directory checked')
