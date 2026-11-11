@@ -1,0 +1,16 @@
+## Interface: 16001
+## Title: Albino UI
+## Notes: Minimal Rogue HUD with two secure native action bars.
+## Author: Albinoass
+## Version: 0.1.0
+## SavedVariablesPerCharacter: AlbinoUIDB
+
+Core.lua
+Compatibility.lua
+Persistence.lua
+Layout.lua
+ActionBars.lua
+Resources.lua
+Cooldowns.lua
+SwingTimers.lua
+Settings.lua

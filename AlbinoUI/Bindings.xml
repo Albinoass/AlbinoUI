@@ -1,0 +1,26 @@
+<Bindings>
+  <Binding name="CLICK AlbinoUIBar1Button1:LeftButton" header="ALBINOUI"/>
+  <Binding name="CLICK AlbinoUIBar1Button2:LeftButton"/>
+  <Binding name="CLICK AlbinoUIBar1Button3:LeftButton"/>
+  <Binding name="CLICK AlbinoUIBar1Button4:LeftButton"/>
+  <Binding name="CLICK AlbinoUIBar1Button5:LeftButton"/>
+  <Binding name="CLICK AlbinoUIBar1Button6:LeftButton"/>
+  <Binding name="CLICK AlbinoUIBar1Button7:LeftButton"/>
+  <Binding name="CLICK AlbinoUIBar1Button8:LeftButton"/>
+  <Binding name="CLICK AlbinoUIBar1Button9:LeftButton"/>
+  <Binding name="CLICK AlbinoUIBar1Button10:LeftButton"/>
+  <Binding name="CLICK AlbinoUIBar1Button11:LeftButton"/>
+  <Binding name="CLICK AlbinoUIBar1Button12:LeftButton"/>
+  <Binding name="CLICK AlbinoUIBar2Button1:LeftButton"/>
+  <Binding name="CLICK AlbinoUIBar2Button2:LeftButton"/>
+  <Binding name="CLICK AlbinoUIBar2Button3:LeftButton"/>
+  <Binding name="CLICK AlbinoUIBar2Button4:LeftButton"/>
+  <Binding name="CLICK AlbinoUIBar2Button5:LeftButton"/>
+  <Binding name="CLICK AlbinoUIBar2Button6:LeftButton"/>
+  <Binding name="CLICK AlbinoUIBar2Button7:LeftButton"/>
+  <Binding name="CLICK AlbinoUIBar2Button8:LeftButton"/>
+  <Binding name="CLICK AlbinoUIBar2Button9:LeftButton"/>
+  <Binding name="CLICK AlbinoUIBar2Button10:LeftButton"/>
+  <Binding name="CLICK AlbinoUIBar2Button11:LeftButton"/>
+  <Binding name="CLICK AlbinoUIBar2Button12:LeftButton"/>
+</Bindings>
